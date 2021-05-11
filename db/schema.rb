@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 2021_05_11_124942) do
     t.string "last_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.integer "fan_count"
+    t.integer "fan_count", default: 0, null: false
   end
 
   create_table "users", force: :cascade do |t|

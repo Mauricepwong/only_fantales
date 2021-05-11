@@ -10,5 +10,13 @@
   <%= @student.last_name %>
 </p>
 
+<p>
+  <strong>Fantales:</strong>
+  <%= @student.fan_count %>
+</p>
+
+
 <%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Delete', @student, method: :delete, data: { confirm: 'Are you sure?' } %> |
 <%= link_to 'Back', students_path %>
+

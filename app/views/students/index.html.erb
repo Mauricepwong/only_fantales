@@ -7,7 +7,7 @@
     <tr>
       <th>First name</th>
       <th>Last name</th>
-      <th>Chocolate Count</th>
+      <th>Fantales</th>
       <th colspan="4"></th>
     </tr>
   </thead>
@@ -19,8 +19,6 @@
         <td><%= student.last_name %></td>
         <td><%= student.fan_count %></td>
         <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
