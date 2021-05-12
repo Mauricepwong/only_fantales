@@ -12,8 +12,12 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
-    <%= yield %>
+    <%= render "shared/navbar2" %>
+    <section class="section">
+    <div class="content">
+      <%= yield %>
+    </div>
+    </section>
     <p class="notice"><%= notice %></p>_
     <p class="alert"><%= alert %></p>
   </body>

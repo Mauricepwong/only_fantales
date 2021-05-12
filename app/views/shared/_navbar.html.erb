@@ -1,5 +1,6 @@
-<nav>
+<nav class="navbar" role="navigation" aria-label="main navigation">
 <%= image_tag "Only_Fantales.jpg", alt: "only fantale logo", class: "logo" %>
+<br />
 <% if user_signed_in? %> 
   
    <%= link_to "Sign Out", destroy_user_session_path, method:"delete" %> 
