@@ -8,11 +8,17 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <%= yield %>
-    <p class="notice"><%= notice %></p>
+    <%= render "shared/navbar2" %>
+    <section class="section">
+    <div class="content">
+      <%= yield %>
+    </div>
+    </section>
+    <p class="notice"><%= notice %></p>_
     <p class="alert"><%= alert %></p>
   </body>
 </html>
